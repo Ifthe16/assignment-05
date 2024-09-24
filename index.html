@@ -2,93 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
-    <!-- google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        .lexend-font {
-            font-family: "Lexend", sans-serif;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <!-- google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    .lexend-font {
+      font-family: "Lexend", sans-serif;
+    }
+  </style>
+  <!-- daisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- tailwind css cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind css configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
         }
-    </style>
-    <!-- daisyUI cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- tailwind css cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind css configuration -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+      }
+    }
+  </script>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 </head>
 
 <body class="lexend-font">
   <!-- header section -->
-    <header class="bg-[#f9f7f3] py-6">
-      <nav class="md:container mx-auto">
-        <div class="navbar">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16" />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
-              </ul>
+  <header class="bg-[#f9f7f3] py-6">
+    <nav class="md:container mx-auto">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <div class="hidden lg:flex">
-              <a class="btn px-8 py-3 text-xl text-[#111111] font-semibold bg-[#B4F461] rounded-lg">Blog</a>
-            </div>
-            
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li><a>Item 3</a></li>
+            </ul>
           </div>
-          <div class="navbar-center lg:flex gap-3">
-            <img src="assets/logo.png" alt="coin donating logo">
-              <a class="text-xl font-semibold text-[#111111]">Donate Bangladesh</a>
+          <div class="hidden lg:flex">
+            <a class="btn px-8 text-xl text-[#111111] font-semibold bg-[#B4F461] rounded-lg">Blog</a>
           </div>
-          <div class="navbar-end"> 
-                <div class="flex justify-center items-center gap-1">
-                  <img src="assets/coin.png" alt="coin picture">
-                  <p class="text-xl font-medium text-[rgba(17,17,17,0.7)]">5500</p>
-                  <p class="text-xl font-medium text-[rgba(17,17,17,0.7)]">BDT</p>
-                </div>
+
+        </div>
+        <div class="navbar-center lg:flex gap-3">
+          <img src="assets/logo.png" alt="coin donating logo">
+          <a class="text-xl font-semibold text-[#111111]">Donate Bangladesh</a>
+        </div>
+        <div class="navbar-end">
+          <div class="flex justify-center items-center gap-1">
+            <img src="assets/coin.png" alt="coin icon">
+            <p class="text-xl font-medium text-[rgba(17,17,17,0.7)]">5500</p>
+            <p class="text-xl font-medium text-[rgba(17,17,17,0.7)]">BDT</p>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- main section  -->
-    <main>
+      </div>
+    </nav>
+  </header>
+  <!-- main section  -->
+  <main class="md:container mx-auto">
+    <!-- features section -->
+      <div class="text-center pt-20 mb-8">
+        <button class="btn font-semibold px-8 py-4 text-[#111111]">Donation</button>
+        <button class="btn font-medium px-8 py-4 text-[rgba(17,17,17,0.7)]">History</button>
+      </div>
+    <!-- donation section start-->
+    <section class="hidden">
+      <!-- donate card-1 -->
+      <div class="py-8 px-5 lg:px-0 rounded-2xl border-2 border-[rgba(17,17,17,0.1)]">
+        <div class="card lg:card-side flex lg:justify-around items-center gap-8">
+     
+            <img class="rounded-xl lg:max-w-lg" src="assets/noakhali.png" alt="Noakhali flood picture" />
+    
+          <div class="max-w-xl space-y-4">
+            <div class="w-1/4 rounded-lg bg-[rgba(17,17,17,0.05)] py-3 px-4 flex justify-center items-center gap-1">
+              <img src="assets/coin.png" alt="coin icon">
+              <p class="text-[rgba(17,17,17,0.7)]">0</p>
+              <p class="text-[rgba(17,17,17,0.7)]">BDT</p>
+            </div>
+            <h2 class="card-title font-bold text-xl text-[#111111]">Donate for Flood at Noakhali, Bangladesh</h2>
+            <p class="text-[rgba(17,17,17,0.7)] font-light">The recent floods in Noakhali have devastated homes and infrastructure, leaving many in urgent need of
+              assistance. Your donation can provide vital supplies and support to those affected by this disaster. Every
+              contribution counts, no matter the size. Let's come together to help rebuild lives and offer hope to those
+              impacted by the floods.</p>
+            <div class="card-actions">
+              <form class="space-y-4">
+                <input type="text" class="p-4 rounded-lg w-full" placeholder="Write Donation Amount">
+                <button class="btn bg-[#B4F461] text-xl font-semibold lg:px-48 rounded-lg text-center w-full" onclick="my_modal_1.showModal()">Donate Now</button>
+                <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box flex items-center flex-col gap-2">
+    <h2 class="text-3xl font-bold text-[#111111]">Congrates!</h2>
+    <img src="assets/coin.png" alt="coin icon">
+    <p class="py-4">You Have Donated for Humankind</p>
+    <h3 class="text-lg font-bold text-[#111111]">Successfully</h3>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn text-[#111111]">close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- donation section end-->
+    <!-- donation history start-->
 
-    </main>
-    <!-- footer section -->
-    <footer>
+    <!-- donation history end -->
+  </main>
+  <!-- footer section -->
+  <footer>
 
-    </footer>
+  </footer>
 </body>
 
 </html>
