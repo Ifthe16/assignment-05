@@ -37,7 +37,7 @@ const date = new Date();
 console.log('now time is:', date);
 
 div.innerHTML = `
-<h4 class="text-xl font-bold text-[#111111]">${donationAmount} Taka is Donated for Flood Relief in Feni,Bangladesh</h4>
+<h4 class="text-xl font-bold text-[#111111]">${donationAmount} Taka is Donated for Flood Relief in Feni, Bangladesh</h4>
 <p class="font-light">Date: ${date}</p>
 `
 document.getElementById('history-section').appendChild(div);
