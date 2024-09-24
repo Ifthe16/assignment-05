@@ -36,7 +36,7 @@
 
 <body class="lexend-font">
   <!-- header section -->
-  <header class="bg-[#f9f7f3] py-6">
+  <header class="bg-[#f9f7f3] py-6 sticky top-0 z-10">
     <nav class="md:container mx-auto">
       <div class="navbar flex flex-col-reverse lg:gap-0 gap-3 lg:flex-row">
         <div class="navbar-start">
@@ -74,7 +74,7 @@
         <div class="navbar-end">
           <div class="hidden lg:flex justify-center items-center gap-1">
             <img src="assets/coin.png" alt="coin icon">
-            <p class="text-xl font-medium text-[rgba(17,17,17,0.7)]">5500</p>
+            <p id="remaining-balance" class="text-xl font-medium text-[rgba(17,17,17,0.7)]">5500</p>
             <p class="text-xl font-medium text-[rgba(17,17,17,0.7)]">BDT</p>
           </div>
         </div>
@@ -85,11 +85,11 @@
   <main class="md:container mx-auto">
     <!-- features section -->
     <div class="text-center pt-20 mb-8 space-x-4">
-      <button class="btn font-semibold px-8 py-4 text-[#111111]">Donation</button>
-      <button class="btn font-medium px-8 py-4 text-[rgba(17,17,17,0.7)]">History</button>
+      <button id="btn-show-donation-section" class="btn font-semibold px-8 py-4 text-[#111111]">Donation</button>
+      <button id="btn-show-history-section" class="btn font-medium px-8 py-4 text-[rgba(17,17,17,0.7)]">History</button>
     </div>
     <!-- donation section start-->
-    <section class="flex flex-col items-center justify-center gap-8 mb-20">
+    <section id="donation-section" class="flex flex-col items-center justify-center gap-8 mb-20">
       <!-- donate card-1 -->
       <div class="p-8 px-5 rounded-2xl border-2 border-[rgba(17,17,17,0.1)]">
         <div class="card lg:card-side flex lg:justify-around items-center gap-8">
@@ -99,7 +99,7 @@
           <div class="max-w-xl space-y-4">
             <div class="w-1/4 rounded-lg bg-[rgba(17,17,17,0.05)] py-3 px-4 flex justify-center items-center gap-1">
               <img src="assets/coin.png" alt="coin icon">
-              <p class="text-[rgba(17,17,17,0.7)]">0</p>
+              <p id="total-donation-1" class="text-[rgba(17,17,17,0.7)]">0</p>
               <p class="text-[rgba(17,17,17,0.7)]">BDT</p>
             </div>
             <h2 class="card-title font-bold text-xl text-[#111111]">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -110,9 +110,8 @@
               impacted by the floods.</p>
             <div class="card-actions">
               <form class="space-y-4">
-                <input type="text" class="p-4 rounded-lg w-full" placeholder="Write Donation Amount">
-                <button class="btn bg-[#B4F461] text-xl font-semibold lg:px-48 rounded-lg text-center w-full"
-                  onclick="my_modal_1.showModal()">Donate Now</button>
+                <input id="input-donation-amount-1" type="text" class="p-4 rounded-lg w-full" placeholder="Write Donation Amount">
+                <button id="btn-show-modal" class="btn bg-[#B4F461] text-xl font-semibold lg:px-48 rounded-lg text-center w-full">Donate Now</button>
                 <!-- Open the modal using ID.showModal() method -->
                 <dialog id="my_modal_1" class="modal">
                   <div class="modal-box flex items-center flex-col gap-2">
@@ -123,7 +122,7 @@
                     <div class="modal-action">
                       <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn text-[#111111]">close confirmation</button>
+                        <button id="btn-close-modal-1" class="btn text-[#111111]">close confirmation</button>
                       </form>
                     </div>
                   </div>
@@ -156,9 +155,9 @@
               <form class="space-y-4">
                 <input type="text" class="p-4 rounded-lg w-full" placeholder="Write Donation Amount">
                 <button class="btn bg-[#B4F461] text-xl font-semibold lg:px-48 rounded-lg text-center w-full"
-                  onclick="my_modal_1.showModal()">Donate Now</button>
+                  onclick="my_modal_2.showModal()">Donate Now</button>
                 <!-- Open the modal using ID.showModal() method -->
-                <dialog id="my_modal_1" class="modal">
+                <dialog id="my_modal_2" class="modal">
                   <div class="modal-box flex items-center flex-col gap-2">
                     <h2 class="text-3xl font-bold text-[#111111]">Congrates!</h2>
                     <img src="assets/coin.png" alt="coin icon">
@@ -200,9 +199,9 @@
               <form class="space-y-4">
                 <input type="text" class="p-4 rounded-lg w-full" placeholder="Write Donation Amount">
                 <button class="btn bg-[#B4F461] text-xl font-semibold lg:px-48 rounded-lg text-center w-full"
-                  onclick="my_modal_1.showModal()">Donate Now</button>
+                  onclick="my_modal_3.showModal()">Donate Now</button>
                 <!-- Open the modal using ID.showModal() method -->
-                <dialog id="my_modal_1" class="modal">
+                <dialog id="my_modal_3" class="modal">
                   <div class="modal-box flex items-center flex-col gap-2">
                     <h2 class="text-3xl font-bold text-[#111111]">Congrates!</h2>
                     <img src="assets/coin.png" alt="coin icon">
@@ -223,17 +222,18 @@
       </div>
     </section>
     <!-- donation section end-->
-
     <!-- donation history start-->
-    <section>
+    <section id="history-section">
 
     </section>
     <!-- donation history end -->
   </main>
   <!-- footer section -->
-  <footer>
-
+  <footer class="footer bg-[#f9f7f3] p-16">
   </footer>
+  <script src="js/features.js"></script>
+  <script src="js/donate.js"></script>
+  <script src="js/utilities.js"></script>
 </body>
 
 </html>
