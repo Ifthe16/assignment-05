@@ -1,3 +1,4 @@
+// card-1: donate now button
 document.getElementById('btn-show-modal').addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -23,6 +24,24 @@ document.getElementById('btn-show-modal').addEventListener('click', function (ev
     document.getElementById('remaining-balance').innerText = newRemainingBalance;
 
     showModalById('my_modal_1');
+
+// add to donation history
+
+const div = document.createElement('div');
+div.classList.add('rounded-2xl');
+div.classList.add('border-2');
+div.classList.add('border-[rgba(17,17,17,0.1)]');
+div.classList.add('p-8');
+
+const date = new Date();
+console.log('now time is:', date);
+
+div.innerHTML = `
+<h4 class="text-xl font-bold text-[#111111]">${donationAmount} Taka is Donated for famine-2024 at Feni, Bangladesh</h4>
+<p class="font-light">Date: ${date}</p>
+`
+document.getElementById('history-section').appendChild(div);
+    
 });
 
 document.getElementById('btn-close-modal-1')
