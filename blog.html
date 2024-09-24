@@ -36,7 +36,7 @@
 
 <body class="lexend-font">
     <!-- header section -->
-    <header class="bg-[#f9f7f3] py-6 sticky top-0 z-10">
+    <header class=" py-6 sticky top-0 z-10 backdrop-blur-lg backdrop-filter mb-20">
         <nav class="md:container mx-auto">
             <div class="navbar flex flex-col-reverse lg:gap-0 gap-3 lg:flex-row">
                 <div class="navbar-start">
@@ -65,7 +65,7 @@
 
 
                     <div class="hidden lg:flex">
-                        <a class="btn px-8 text-xl text-[#111111] font-semibold bg-[#B4F461] rounded-lg">Blog</a>
+                        <a id="btn-home" class="btn px-8 text-xl text-[#111111] font-semibold bg-[#B4F461] rounded-lg">Home</a>
                     </div>
 
                 </div>
@@ -83,3 +83,53 @@
             </div>
         </nav>
     </header>
+    <main class="md:container mx-auto">
+        <section class="mb-20">
+            <div class="flex items-center justify-center lg:justify-start mb-12">
+                <h2 class="text-4xl font-bold">Important FAQ</h2>
+                <img src="assets/icons8-faq.gif" alt="question gif">
+            </div>
+            <!-- faq section -->
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium text-[#111111]">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface that represents the structure of a
+                        webpage as a tree of objects. It allows developers to access, modify, and interact with HTML or
+                        XML documents dynamically using languages like JavaScript.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium text-[#111111]">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>Use methods like getElementByTagName(), getElementById(), querySelector(), or
+                        getElementsByClassName() to select DOM elements.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-[#111111]">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is attaching a single event listener to a parent element to manage child
+                        elements' events, improving performance and handling dynamically added elements.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-[#111111]">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>Use setAttribute() or direct properties for attributes, and element.style to modify an element's styles.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-[#f9f7f3] p-16">
+    </footer>
+    <script src="js/features.js"></script>
+    <script src="js/features2.js"></script>
+</body>
+</html>
