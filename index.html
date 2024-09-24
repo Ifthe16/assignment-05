@@ -121,7 +121,7 @@
                     <h3 class="text-lg font-bold text-[#111111]">Successfully</h3>
                     <div class="modal-action">
                       <form method="dialog">
-                        <!-- if there is a button in form, it will close the modal -->
+                        <!-- close the modal clicking button -->
                         <button id="btn-close-modal-1" class="btn text-[#111111]">close confirmation</button>
                       </form>
                     </div>
@@ -141,7 +141,7 @@
           <div class="max-w-xl space-y-4">
             <div class="w-1/4 rounded-lg bg-[rgba(17,17,17,0.05)] py-3 px-4 flex justify-center items-center gap-1">
               <img src="assets/coin.png" alt="coin icon">
-              <p class="text-[rgba(17,17,17,0.7)]">600</p>
+              <p id="total-donation-2" class="text-[rgba(17,17,17,0.7)]">600</p>
               <p class="text-[rgba(17,17,17,0.7)]">BDT</p>
             </div>
             <h2 class="card-title font-bold text-xl text-[#111111]">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -153,10 +153,9 @@
               this disaster.</p>
             <div class="card-actions">
               <form class="space-y-4">
-                <input type="text" class="p-4 rounded-lg w-full" placeholder="Write Donation Amount">
-                <button class="btn bg-[#B4F461] text-xl font-semibold lg:px-48 rounded-lg text-center w-full"
-                  onclick="my_modal_2.showModal()">Donate Now</button>
-                <!-- Open the modal using ID.showModal() method -->
+                <input id="input-donation-amount-2" type="text" class="p-4 rounded-lg w-full" placeholder="Write Donation Amount">
+                <button id="btn-show-modal-2" class="btn bg-[#B4F461] text-xl font-semibold lg:px-48 rounded-lg text-center w-full">Donate Now</button>
+                <!-- Open the modal using my_modal_2.showModal() method -->
                 <dialog id="my_modal_2" class="modal">
                   <div class="modal-box flex items-center flex-col gap-2">
                     <h2 class="text-3xl font-bold text-[#111111]">Congrates!</h2>
@@ -166,7 +165,7 @@
                     <div class="modal-action">
                       <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn text-[#111111]">close confirmation</button>
+                        <button id="btn-close-modal-2" class="btn text-[#111111]">close confirmation</button>
                       </form>
                     </div>
                   </div>
@@ -233,6 +232,8 @@
   </footer>
   <script src="js/features.js"></script>
   <script src="js/donation1.js"></script>
+  <script src="js/donation2.js"></script>
+  <script src="js/donation3.js"></script>
   <script src="js/utilities.js"></script>
 </body>
 
