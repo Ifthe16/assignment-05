@@ -1,7 +1,7 @@
 // blog button for large device
 document.getElementById('btn-blog')
     .addEventListener('click', function () {
-        window.location.href = '/blog.html';
+        window.location.href = './blog.html';
         console.log('clicked blog')
     });
 
