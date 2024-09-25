@@ -4,6 +4,7 @@ document.getElementById('btn-show-modal-2').addEventListener('click', function (
 
     const donationAmount = getInputFieldValueById('input-donation-amount-2');
     const totalRemainingBalance = getTextFieldValueById('remaining-balance');
+    const totalRemainingBalance2 = getTextFieldValueById('remaining-balance-2');
 
     const totalDonation = getTextFieldValueById('total-donation-2');
 
@@ -12,16 +13,18 @@ document.getElementById('btn-show-modal-2').addEventListener('click', function (
         return;
     }
 
-    if (donationAmount === 0 || donationAmount > totalRemainingBalance) {
+    if (donationAmount === 0 || donationAmount > totalRemainingBalance || donationAmount > totalRemainingBalance2) {
         alert('You do not have enough money to donate.');
         return;
     }
 
     const newDonationBalance = totalDonation + donationAmount;
     const newRemainingBalance = totalRemainingBalance - donationAmount;
+    const newRemainingBalance2 = totalRemainingBalance2 - donationAmount;
 
     document.getElementById('total-donation-2').innerText = newDonationBalance;
     document.getElementById('remaining-balance').innerText = newRemainingBalance;
+    document.getElementById('remaining-balance-2').innerText = newRemainingBalance2;
 
     showModalById('my_modal_2');
 
