@@ -1,9 +1,11 @@
-    document.getElementById('btn-blog')
+// blog button for large device
+document.getElementById('btn-blog')
     .addEventListener('click', function () {
         window.location.href = '/blog.html';
         console.log('clicked blog')
-    });    
+    });
 
+// donation button
 document.getElementById('btn-show-donation-section')
     .addEventListener('click', function () {
         document.getElementById('btn-show-donation-section').classList.add('bg-[#B4F461]');
@@ -15,6 +17,7 @@ document.getElementById('btn-show-donation-section')
         showSectionById('donation-section');
     });
 
+// history button
 document.getElementById('btn-show-history-section')
     .addEventListener('click', function () {
         document.getElementById('btn-show-history-section').classList.add('bg-[#B4F461]');

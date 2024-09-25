@@ -1,28 +1,32 @@
-function showSectionById(id){
-document.getElementById('donation-section').classList.add('hidden');
-document.getElementById('history-section').classList.add('hidden');
-document.getElementById(id).classList.remove('hidden');
+// toggle
+function showSectionById(id) {
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('history-section').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
 }
 
-function showModalById(id){
-    const  modalShow = document.getElementById(id);
+// modal
+function showModalById(id) {
+    const modalShow = document.getElementById(id);
     const showModal = modalShow.showModal();
     return showModal;
-    };
+};
 
- function closeModalById(id){
+function closeModalById(id) {
     const modalClose = document.getElementById(id);
     const closeModal = modalClose.close();
-return closeModal;
- }   
+    return closeModal;
+}
 
-function getInputFieldValueById(id){
+// input
+function getInputFieldValueById(id) {
     const inputValue = document.getElementById(id).value;
     const inputNumber = parseFloat(inputValue);
     return inputNumber;
 }
 
-function getTextFieldValueById(id){
+// inner text
+function getTextFieldValueById(id) {
     const textValue = document.getElementById(id).innerText;
     const textNumber = parseFloat(textValue);
     return textNumber;
