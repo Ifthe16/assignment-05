@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="data-theme">
 
 <head>
   <meta charset="UTF-8">
@@ -79,7 +79,7 @@
         </div>
       </div>
       <!-- navbar for large device -->
-      <div class="navbar">
+      <div class="navbar hidden lg:flex">
         <!-- blog -->
         <div class="navbar-start">
           <div class="hidden lg:flex">
@@ -100,16 +100,16 @@
           </div>
         </div>
       </div>
-    </nav>
-  </header>
-  <!-- main section  -->
-  <main class="md:container mx-auto">
-    <!-- features section -->
-    <div class="text-center pt-20 mb-8 space-x-4">
+      <!-- features section -->
+    <div class="text-center pt-5 lg:pt-20 space-x-4">
       <button id="btn-show-donation-section"
         class="btn font-semibold px-8 py-4 bg-[#B4F461] text-[#111111]">Donation</button>
       <button id="btn-show-history-section" class="btn font-medium px-8 py-4">History</button>
     </div>
+    </nav>
+  </header>
+  <!-- main section  -->
+  <main class="md:container mx-auto">
     <!-- donation section start-->
     <section id="donation-section" class="flex flex-col items-center justify-center gap-8 mb-20">
       <!-- donate card-1 -->

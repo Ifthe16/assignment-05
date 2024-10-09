@@ -11,7 +11,7 @@ document.getElementById('btn-show-modal').addEventListener('click', function (ev
         alert('Invalid Donation amount');
         return;
     }
-
+    
     if (donationAmount === 0 || donationAmount > totalRemainingBalance || donationAmount > totalRemainingBalance2) {
         alert('You do not have enough money to donate.');
         return;
